@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  .h1 {
+    padding-bottom: 1rem;
+
+    font-family: var(--font-title);
+    text-decoration: none;
+    color: black;
+  }
+
+  .ul {
+    display: flex;
+    gap: 2rem;
+
+    list-style: none;
+
+    .a {
+      padding-bottom: 1rem;
+
+      font-weight: lighter;
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        border-bottom: 2px solid black;
+      }
+    }
+
+    .contact {
+      padding-bottom: 1rem;
+
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

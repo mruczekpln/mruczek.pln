@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../styles/globals.scss";
+import Navbar from "@/components/navbar";
 
 const titleFont = localFont({
   src: [

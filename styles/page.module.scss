@@ -1,11 +1,63 @@
 .main {
-  width: 1280px;
+  width: 1080px;
 
   margin-inline: auto;
   padding: 2rem 0;
 
-  h1 {
-    font-family: var(--font-title);
+  hr {
+    margin-bottom: 4rem;
+  }
+
+  .header {
+    display: flex;
+    gap: 2rem;
+
+    .avatar {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+
+      position: relative;
+
+      flex-shrink: 0;
+
+      filter: saturate(0) contrast(50%);
+    }
+
+    .mainInfo {
+      h2 {
+        margin-bottom: 1rem;
+
+        font-family: var(--font-title);
+        font-size: 32px;
+        line-height: 150%;
+
+        span {
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+
+  .techContainer {
+    margin-top: 2rem;
+    padding: 1rem;
+
+    background-color: #171717;
+    color: white;
+
+    h3 > span {
+      font-weight: normal;
+      font-size: 60%;
+    }
+
+    hr {
+      margin: 1rem 0;
+    }
+
+    .techGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 1fr);
+    }
   }
 }
-
