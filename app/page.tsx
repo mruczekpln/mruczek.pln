@@ -26,7 +26,7 @@ export default function Home() {
             <strong>17, based in PL.</strong> former gaming addict who&apos;s
             now trying to replace it wit coding and creative work. discovering
             modern technologies and solutions. learning through building and
-            doine mistakes, but &quot;
+            doing mistakes, but &quot;
             <em>kto kołaczy o droge nie pyta, ten nie błądzi</em>&quot; - biskup
             2023
           </p>
@@ -71,7 +71,7 @@ export default function Home() {
               TYPESCRIPT
             </p>
             <p>
-              <i className="devicon-typescript-plain"></i>
+              <i className="devicon-react-plain"></i>
               REACT
             </p>
             <p>

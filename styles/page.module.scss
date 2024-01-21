@@ -53,7 +53,7 @@
       line-height: 1.2;
 
       &::first-line {
-        background-image: linear-gradient(to right, blue, cornflowerblue);
+        background-image: linear-gradient(to right, #a2c5fe, #c2e9fc);
       }
 
       em {
@@ -65,6 +65,14 @@
 
       span {
         font-size: 1rem;
+      }
+    }
+
+    .mainInfo {
+      p {
+        em {
+          color: blue;
+        }
       }
     }
   }

@@ -4,6 +4,8 @@
   justify-content: space-between;
 
   .h1 {
+    height: 40px;
+
     padding-bottom: 1rem;
 
     font-family: var(--font-title);
@@ -24,15 +26,13 @@
     list-style: none;
 
     .a {
+      height: 40px;
+
       padding-bottom: 1rem;
 
       font-weight: lighter;
       text-decoration: none;
       color: black;
-
-      &:hover {
-        border-bottom: 1px solid black !important;
-      }
     }
 
     .contact {
@@ -41,6 +41,11 @@
       font-weight: bold;
       text-decoration: none;
       color: black;
+    }
+
+    .a:hover,
+    .contact:hover {
+      border-bottom: 1px solid black !important;
     }
   }
 }
