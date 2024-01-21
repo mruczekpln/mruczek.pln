@@ -1,6 +1,7 @@
 import styles from "@/styles/page.module.scss";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,11 +10,17 @@ export default function Home() {
       <hr />
       <section className={styles.header}>
         <div className={styles.avatar}>
-          <Image src="/assets/avatar.gif" objectFit="cover" fill alt="hey" />
+          <Image
+            className={styles.gif}
+            src="/assets/landing1.gif"
+            fill
+            alt="hey"
+          />
         </div>
         <div className={styles.mainInfo}>
           <h2>
-            programmer, dreamer, <br /> <span>but mostly a student.</span>
+            programmer, <em>dreamer,</em> <br />
+            <span>but mostly a student.</span>
           </h2>
           <p>
             <strong>17, based in PL.</strong> former gaming addict who&apos;s
@@ -26,17 +33,112 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.techContainer}>
-        <h3>
-          tech stack, <span>things that i know</span>
-        </h3>
-        <hr />
-        <div className={styles.techGrid}>
-          <p>HTML5</p>
-          <p>CSS</p>
-          <p>SASS</p>
-          <p>TAILWIND CSS</p>
+      <section className={styles.techSection}>
+        <div className={`${styles.techContainer} ${styles.programming}`}>
+          <h3>programming languages & solutions</h3>
+          <hr />
+          <div className={styles.techGrid}>
+            <p>
+              <i className="devicon-html5-plain"></i>
+              HTML5
+            </p>
+            <p>
+              <i className="devicon-css3-plain"></i>
+              CSS
+            </p>
+            <p>
+              <i className="devicon-sass-original"></i>
+              SASS
+            </p>
+            <p>
+              <i className="devicon-tailwindcss-plain"></i>
+              TAILWIND CSS
+            </p>
+            <p>
+              <i className="devicon-php-plain"></i>
+              PHP
+            </p>
+            <p>
+              <i className="devicon-mysql-plain"></i>
+              MYSEQUEL
+            </p>
+            <p>
+              <i className="devicon-javascript-plain"></i>
+              JAVASCRIPT
+            </p>
+            <p>
+              <i className="devicon-typescript-plain"></i>
+              TYPESCRIPT
+            </p>
+            <p>
+              <i className="devicon-typescript-plain"></i>
+              REACT
+            </p>
+            <p>
+              <i className="devicon-nextjs-original"></i>
+              NEXT JS 14
+            </p>
+          </div>
         </div>
+        <div className={styles.thumbnail}>
+          <Image
+            className={styles.gif}
+            src="/assets/landing2.gif"
+            fill
+            alt="landing2"
+          />
+        </div>
+      </section>
+
+      <section
+        style={{ flexDirection: "row-reverse" }}
+        className={styles.techSection}
+      >
+        <div className={`${styles.techContainer} ${styles.design}`}>
+          <h3>creative apps & design utilities</h3>
+          <hr />
+          <div className={styles.techGrid}>
+            <p>
+              <i className="devicon-gimp-plain"></i>
+              GIMP
+            </p>
+            <p>
+              <i className="devicon-photoshop-plain"></i>
+              PHOTOSHOP
+            </p>
+            <p>
+              <i className="devicon-premierepro-plain"></i>
+              PREMIERE PRO
+            </p>
+            <p>VEGAS PRO</p>
+            <p>
+              <i className="devicon-figma-plain"></i>
+              FIGMA
+            </p>
+          </div>
+        </div>
+        <div className={styles.thumbnail}>
+          <Image
+            className={styles.gif}
+            src="/assets/landing3.gif"
+            fill
+            alt="landing2"
+          />
+        </div>
+      </section>
+      <hr />
+      <section className={styles.rigSection}>
+        <h2>
+          Daily rig, <br /> <span>dev enviroment</span>
+        </h2>
+        <ul>
+          <li>
+            pc:{" "}
+            <Link href="https://pcpartpicker.com/list/D2zRHG">partpicker</Link>
+          </li>
+          <li>visual studio code</li>
+          <li>wsl2, ubuntu 22.04</li>
+        </ul>
       </section>
     </main>
   );

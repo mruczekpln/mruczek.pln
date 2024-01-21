@@ -4,14 +4,18 @@ import styles from "@/styles/navbar.module.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-type Pathname = "about" | "projects" | "contact";
+type Pathname = "" | "about" | "projects" | "contact";
 
 export default function Navbar() {
   const pahtname = usePathname().slice(1) as Pathname;
 
   return (
     <nav className={styles.nav}>
-      <Link href="/" className={styles.h1}>
+      <Link
+        href="/"
+        style={{ borderBottom: pahtname === "" ? "2px solid blue" : "none" }}
+        className={styles.h1}
+      >
         <h1>mruczekpln</h1>
       </Link>
       <ul className={styles.ul}>
@@ -20,7 +24,7 @@ export default function Navbar() {
             href="/about"
             className={styles.a}
             style={{
-              borderBottom: pahtname === "about" ? "1px solid black" : "none",
+              borderBottom: pahtname === "about" ? "2px solid black" : "none",
             }}
           >
             about
@@ -32,7 +36,7 @@ export default function Navbar() {
             className={styles.a}
             style={{
               borderBottom:
-                pahtname === "projects" ? "1px solid black" : "none",
+                pahtname === "projects" ? "2px solid black" : "none",
             }}
           >
             projects
@@ -43,7 +47,7 @@ export default function Navbar() {
             href="/contact"
             className={styles.contact}
             style={{
-              borderBottom: pahtname === "contact" ? "1px solid black" : "none",
+              borderBottom: pahtname === "contact" ? "2px solid black" : "none",
             }}
           >
             get in touch
