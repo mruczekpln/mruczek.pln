@@ -1,6 +1,6 @@
 import Navbar from "@/components/navbar";
 import ProjectCard from "@/components/project-card";
-import styles from "@/styles/projects.module.scss";
+import styles from "@/styles/page/projects.module.scss";
 import Image from "next/image";
 
 export default function Projects() {

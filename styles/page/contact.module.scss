@@ -1,0 +1,50 @@
+.main {
+  max-width: 1080px;
+
+  margin-inline: auto;
+  padding: 2rem 2rem;
+
+  section {
+    width: 100%;
+    height: 800px;
+
+    margin-top: 2rem;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+
+    div {
+      overflow: hidden;
+      text-overflow: clip;
+
+      position: absolute;
+      inset: 0;
+
+      background-color: #171717;
+      color: whitesmoke;
+
+      font-family: var(--font-title);
+      font-size: 3rem;
+      white-space: nowrap;
+    }
+
+    article {
+      width: 50%;
+      height: 50%;
+
+      z-index: 5;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background-color: white;
+    }
+  }
+}

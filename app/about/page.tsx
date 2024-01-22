@@ -1,5 +1,5 @@
 import Navbar from "@/components/navbar";
-import styles from "@/styles/about.module.scss";
+import styles from "@/styles/page/about.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -37,12 +37,12 @@ export default function About() {
           <strong>thinking creatively since 2006</strong>. most of my knowledge
           got from my grandpa in a small village located on the west side of
           poland. went to primary school there and now learning in technical
-          school no. 2 "Elektronik" on profile named "Programming Technician".
-          in school i got taught html, css, js, php but i had known them earlier
-          so it didnt really matter too much. now transpiling design ideas to
-          real code in react on daily basis. when im doing something i really
-          focus on time to outcome productivity and always trying the most
-          efficient way!
+          school no. 2 &quot;Elektronik&quot; on profile named &quot;Programming
+          Technician&quot;. in school i got taught html, css, js, php but i had
+          known them earlier so it didnt really matter too much. now transpiling
+          design ideas to real code in react on daily basis. when im doing
+          something i really focus on time to outcome productivity and always
+          trying the most efficient way!
         </p>
 
         <article className={styles.hobbie}>

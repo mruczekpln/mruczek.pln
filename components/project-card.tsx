@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ComponentProps } from "react";
-import styles from "@/styles/project-card.module.scss";
+import styles from "@/styles/component/project-card.module.scss";
 
 type ProjectCardProps = {
   image: {
