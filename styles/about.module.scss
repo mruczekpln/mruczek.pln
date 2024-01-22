@@ -1,0 +1,79 @@
+.main {
+  max-width: 1080px;
+
+  margin-inline: auto;
+  padding: 2rem 2rem;
+
+  .header {
+    margin-top: 4rem;
+    margin-bottom: 2.8rem;
+
+    h2 {
+      margin-bottom: 1rem;
+
+      font-size: 1.8rem;
+      font-weight: normal;
+      line-height: 150%;
+
+      span {
+        margin-right: 2rem;
+
+        color: gray;
+
+        font-family: var(--font-title);
+        font-size: 3rem;
+        font-weight: bold;
+        text-decoration: line-through;
+        text-decoration-thickness: 4px;
+        text-decoration-color: white;
+        line-height: normal;
+      }
+    }
+  }
+
+  .grid {
+    max-width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 100px 200px 200px 100px;
+    gap: 1rem;
+
+    .hobbie {
+      background-color: #171717;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      border: 1px solid black;
+
+      h3 {
+        font-family: var(--font-title);
+        font-size: 4rem;
+      }
+    }
+
+    & > p {
+      padding-inline: 0.5rem;
+
+      font-size: 1.25rem;
+      text-align: justify;
+    }
+
+    .contact {
+      grid-column: 2 / 5;
+
+      flex-direction: row;
+
+      background-color: #171717;
+      a {
+        color: white;
+      }
+    }
+  }
+}

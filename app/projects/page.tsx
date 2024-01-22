@@ -1,10 +1,7 @@
 import Navbar from "@/components/navbar";
 import ProjectCard from "@/components/project-card";
 import styles from "@/styles/projects.module.scss";
-import { link } from "fs";
 import Image from "next/image";
-import Link from "next/link";
-import { ComponentProps } from "react";
 
 export default function Projects() {
   return (
