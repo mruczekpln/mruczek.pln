@@ -7,15 +7,17 @@
   .header {
     // padding-top: 4rem;
     // margin-bottom: 1rem;
-    margin: 4rem 0;
+    margin: 2rem 0;
 
     display: flex;
-    // flex-direction: row-reverse;
-    justify-content: space-between;
-    gap: 4rem;
+    align-items: center;
+    justify-content: space-around;
+    // gap: 4rem;
 
     div {
-      width: auto;
+      // width: auto;
+      // height: fit-content;
+      height: 110px;
 
       h2 {
         font-family: var(--font-title);
@@ -42,23 +44,27 @@
       }
     }
 
-    aside {
-      width: 100%;
-      // height: 100%;
+    // aside {
+    //   width: 100%;
+    //   // height: 100%;
 
-      position: relative;
+    //   position: relative;
 
-      img {
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
+    img {
+      // width: auto;
+      // height: 120px;
 
-        filter: saturate(0%);
+      // object-fit: cover;
+      object-fit: cover;
+      // aspect-ratio: 1 / 1;
 
-        transition-duration: 100ms;
-      }
+      filter: saturate(0%);
+
+      transition-duration: 100ms;
     }
+    // }
 
-    &:hover > aside img {
+    &:hover > img {
       filter: saturate(150%) hue-rotate(150deg);
     }
   }
@@ -75,95 +81,6 @@
     article:nth-child(odd) {
       position: relative;
       left: 10%;
-    }
-
-    article {
-      width: 90%;
-
-      display: flex;
-      gap: 3rem;
-
-      img {
-        padding: 0.5rem;
-
-        object-fit: contain;
-
-        border: 1px solid black;
-      }
-
-      .description {
-        width: 100%;
-
-        padding: 0.5rem;
-
-        position: relative;
-
-        // border: 1px solid black;
-
-        h3 {
-          margin-bottom: 0.5rem;
-
-          font-family: var(--font-title);
-          font-size: 2rem;
-
-          span {
-            font-family: var(--font-main);
-            font-size: 1rem;
-          }
-        }
-
-        p {
-          font-weight: 300;
-        }
-
-        .stack {
-          width: 100%;
-          height: 40px;
-
-          padding-inline: 1rem;
-
-          position: absolute;
-          bottom: 0;
-          left: 0;
-
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-
-          // background-color: #171717;
-          background-image: linear-gradient(to bottom, orange, #171717);
-          color: white;
-
-          border-top: 1px solid black;
-
-          p {
-            // width: 100%;
-            // height: 100%;
-
-            font-size: 12px;
-            font-weight: bold;
-
-            // border-left: 1px solid black;
-          }
-
-          // &:not(:first-child) {
-          //   border-left: none;
-          // }
-        }
-      }
-
-      .links {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        gap: 1rem;
-
-        a {
-          font-size: 1.5rem;
-          color: red;
-        }
-      }
     }
   }
 }

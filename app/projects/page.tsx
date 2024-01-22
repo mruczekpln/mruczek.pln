@@ -1,61 +1,10 @@
 import Navbar from "@/components/navbar";
+import ProjectCard from "@/components/project-card";
 import styles from "@/styles/projects.module.scss";
 import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
 import { ComponentProps } from "react";
-
-type ProjectCardProps = {
-  image: {
-    src: string;
-    alt: string;
-  };
-  titleText: string;
-  year: number;
-  stack: string[];
-  links: {
-    github: string;
-    live?: string;
-  };
-} & ComponentProps<"article">;
-
-function ProjectCard({
-  image,
-  titleText,
-  year,
-  stack,
-  links,
-  children,
-}: ProjectCardProps) {
-  return (
-    <article>
-      <Image src={image.src} alt={image.src} width={250} height={200}></Image>
-      <div className={styles.description}>
-        <h3>
-          {titleText} <br />
-          <span>{year}</span>
-        </h3>
-        {children}
-        <div className={styles.stack}>
-          {/* <strong>build with:</strong> */}
-          {stack.map((stack, index) => (
-            <p key={`${stack}_${index}`}>{stack}</p>
-          ))}
-        </div>
-      </div>
-      <div className={styles.links}>
-        <Link href={links.github} target="_blank">
-          github
-        </Link>
-        {links.live && (
-          <Link href={links.live} target="_blank">
-            live
-          </Link>
-        )}
-      </div>
-    </article>
-  );
-}
 
 export default function Projects() {
   return (
@@ -63,9 +12,14 @@ export default function Projects() {
       <Navbar></Navbar>
       <hr />
       <section className={styles.header}>
-        <aside>
-          <Image src="/assets/projects1.gif" alt="projects 1" fill></Image>
-        </aside>
+        {/* <aside> */}
+        <Image
+          src="/assets/projects1.gif"
+          alt="projects 1"
+          width={120}
+          height={120}
+        ></Image>
+        {/* </aside> */}
 
         <div>
           <h2>projects</h2>
