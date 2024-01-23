@@ -69,13 +69,7 @@ export default function Projects() {
           image={{ src: "/projects/lowel.png", alt: "lowel" }}
           titleText="Lowel."
           year={2023}
-          stack={[
-            "reactts",
-            "react-router",
-            "framer-motion",
-            "tailwindcss",
-            "netlify",
-          ]}
+          stack={["reactts", "framer-motion", "tailwindcss", "netlify"]}
           links={{
             github: "https://github.com/mruczekpln/lowel.git",
             live: "https://comfy-pavlova-9ced48.netlify.app/",
@@ -111,7 +105,7 @@ export default function Projects() {
             "vite",
             "nodejs",
             "express",
-            "mysql + xampp",
+            "mysql",
           ]}
           links={{
             github: "https://github.com/mruczekpln/blocks.git",

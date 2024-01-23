@@ -27,28 +27,30 @@ export default function ProjectCard({
   return (
     <article className={styles.projectCard}>
       <Image src={image.src} alt={image.src} width={250} height={200}></Image>
-      <div className={styles.description}>
-        <h3>
-          {titleText} <br />
-          <span>{year}</span>
-        </h3>
-        {children}
+      <div className={styles.container}>
+        <div className={styles.description}>
+          <h3>
+            {titleText} <br />
+            <span>{year}</span>
+          </h3>
+          {children}
+        </div>
+        <div className={styles.links}>
+          <Link href={links.github} target="_blank">
+            github
+          </Link>
+          {links.live && (
+            <Link href={links.live} target="_blank">
+              live
+            </Link>
+          )}
+        </div>
         <div className={styles.stack}>
           {/* <strong>build with:</strong> */}
           {stack.map((stack, index) => (
             <p key={`${stack}_${index}`}>{stack}</p>
           ))}
         </div>
-      </div>
-      <div className={styles.links}>
-        <Link href={links.github} target="_blank">
-          github
-        </Link>
-        {links.live && (
-          <Link href={links.live} target="_blank">
-            live
-          </Link>
-        )}
       </div>
     </article>
   );

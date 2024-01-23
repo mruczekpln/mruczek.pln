@@ -1,7 +1,7 @@
 .main {
   max-width: 1080px;
+  width: 1080px;
 
-  margin-inline: auto;
   padding: 2rem 2rem;
 
   .header {
@@ -21,6 +21,8 @@
       }
 
       h3 {
+        width: fit-content;
+
         margin-top: 1.5rem;
 
         position: relative;
@@ -56,16 +58,68 @@
 
   .projects {
     margin-top: 4rem;
+    padding-inline: 2rem;
 
     display: flex;
     flex-direction: column;
     // align-items: center;
     justify-content: center;
     gap: 8rem;
+  }
+}
 
+@media (min-width: 1024px) {
+  .projects {
     article:nth-child(odd) {
-      position: relative;
-      left: 10%;
+      // position: relative;
+      // left: 10%;
+      align-self: flex-end;
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    scale: 0.8;
+
+    img {
+      display: none;
+    }
+  }
+
+  .projects {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    scale: 1;
+
+    div {
+      height: auto !important;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-size: 3rem !important;
+      }
+
+      h3 {
+        position: static !important;
+
+        span {
+          position: static !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .header div h2 {
+    font-size: 2rem !important;
   }
 }

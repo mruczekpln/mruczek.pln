@@ -85,7 +85,40 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    h2 {
+      span {
+        font-size: 1.75rem !important;
+        text-decoration-thickness: 2px !important;
+      }
+    }
+  }
+
   .grid {
     grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+
+    & > * {
+      padding: 2rem 0;
+
+      grid-column: 1 !important;
+      grid-row: auto;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    margin-top: 2rem !important;
+
+    h2 span {
+      margin: 0 !important;
+
+      font-size: 1.25rem !important;
+    }
+  }
+
+  .contact a {
+    font-size: 0.75rem !important;
   }
 }
