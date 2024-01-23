@@ -1,7 +1,7 @@
 .main {
   max-width: 1080px;
+  width: 1080px;
 
-  margin-inline: auto;
   padding: 2rem 2rem;
 
   section {
@@ -45,6 +45,16 @@
       align-items: center;
 
       background-color: white;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main section {
+    height: 700px;
+
+    article {
+      width: 100% !important;
     }
   }
 }
