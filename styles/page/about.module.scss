@@ -1,7 +1,7 @@
 .main {
   max-width: 1080px;
 
-  margin-inline: auto;
+  // margin-inline: auto;
   padding: 2rem 2rem;
 
   .header {
@@ -11,7 +11,7 @@
     h2 {
       margin-bottom: 1rem;
 
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: normal;
       line-height: 150%;
 
@@ -36,7 +36,7 @@
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px 100px 200px 200px 100px;
+    grid-template-rows: 200px 150px 200px 200px 100px;
     gap: 1rem;
 
     .hobbie {
@@ -75,5 +75,17 @@
         color: white;
       }
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid > p {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
   }
 }

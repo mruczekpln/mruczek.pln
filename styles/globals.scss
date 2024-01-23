@@ -8,8 +8,11 @@
 }
 
 body {
-  width: 100svw;
+  width: 100vw;
   overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
 
   font-family: var(--font-main);
 }
