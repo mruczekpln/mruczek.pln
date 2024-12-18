@@ -26,6 +26,25 @@ export default function Projects() {
         </div>
       </section>
       <hr />
+      <h2>Freelance</h2>
+      <section className={styles.projects}>
+        <ProjectCard
+          image={{ src: "/projects/awmaluje.png", alt: "awmaluje" }}
+          titleText="AWmaluje"
+          year={2024}
+          stack={["astro", "strapi", "scss"]}
+          links={{
+            live: "https://awmaluje.pl",
+          }}
+        >
+          <p>
+            first freelance app built for a local business in Poland. astro -
+            responsive frontend layer, strapi - cms for client on linux vps
+          </p>
+        </ProjectCard>
+      </section>
+      <hr />
+      <h2>Personal development</h2>
       <section className={styles.projects}>
         <ProjectCard
           image={{ src: "/projects/tastybites.png", alt: "tastybites" }}
@@ -41,7 +60,6 @@ export default function Projects() {
           ]}
           links={{
             github: "https://github.com/mruczekpln/tastybites.git",
-            live: "https://tastybites-zeta.vercel.app",
           }}
         >
           <p>
@@ -57,7 +75,6 @@ export default function Projects() {
           stack={["nextts13", "tailwindcss", "next-auth", "mongodb", "vercel"]}
           links={{
             github: "https://github.com/mruczekpln/zephyr.git",
-            live: "https://zephyr-eta.vercel.app/",
           }}
         >
           <p>
@@ -78,42 +95,6 @@ export default function Projects() {
           <p>
             e-commerce shop frontend layer with responsive design and modern
             animations.
-          </p>
-        </ProjectCard>
-
-        <ProjectCard
-          image={{ src: "/projects/nonogram.png", alt: "nonogram" }}
-          titleText="Nonogram App"
-          year={2023}
-          stack={["reactjs", "tailwindcss", "vite"]}
-          links={{
-            github: "https://github.com/mruczekpln/nonogram.git",
-          }}
-        >
-          <p>
-            one of my first react apps, simple nonogram game styled w/ tailwind.
-          </p>
-        </ProjectCard>
-
-        <ProjectCard
-          image={{ src: "/projects/blocks.png", alt: "blocks" }}
-          titleText="blocks"
-          year={2022}
-          stack={[
-            "reactts",
-            "tailwindcss",
-            "vite",
-            "nodejs",
-            "express",
-            "mysql",
-          ]}
-          links={{
-            github: "https://github.com/mruczekpln/blocks.git",
-          }}
-        >
-          <p>
-            my first fullstack app. most basic crud on top of reactts and
-            expressjs connected with mysql local database.
           </p>
         </ProjectCard>
       </section>

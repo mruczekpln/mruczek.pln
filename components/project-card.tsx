@@ -12,10 +12,11 @@ type ProjectCardProps = {
   year: number;
   stack: string[];
   links: {
-    github: string;
+    github?: string;
     live?: string;
   };
 } & ComponentProps<"article">;
+
 export default function ProjectCard({
   image,
   titleText,
@@ -36,9 +37,11 @@ export default function ProjectCard({
           {children}
         </div>
         <div className={styles.links}>
-          <Link href={links.github} target="_blank">
-            github
-          </Link>
+          {links.github && (
+            <Link href={links.github} target="_blank">
+              github
+            </Link>
+          )}
           {links.live && (
             <Link href={links.live} target="_blank">
               live

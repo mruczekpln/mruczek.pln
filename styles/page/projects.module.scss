@@ -56,8 +56,12 @@
     }
   }
 
+  > h2 {
+    padding: 2rem 0 0 2rem;
+  }
+
   .projects {
-    margin-top: 4rem;
+    margin: 2rem;
     padding-inline: 2rem;
 
     display: flex;
