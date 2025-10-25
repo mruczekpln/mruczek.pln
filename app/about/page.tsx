@@ -20,12 +20,12 @@ export default function About() {
       <section className={styles.grid}>
         <article style={{ gridColumn: "1 / 3" }}>
           <p>level</p>
-          <h3>17</h3>
+          <h3>18</h3>
         </article>
 
         <article style={{ gridColumn: "3 / 5" }}>
-          <p>years of experience</p>
-          <h3>3+ </h3>
+          <p>programming for</p>
+          <h3>4+ yrs</h3>
         </article>
 
         <article style={{ gridColumn: "1 / 3" }}>
@@ -71,7 +71,7 @@ export default function About() {
         </article>
         <article className={styles.hobbie}>
           <Image
-            src="/about/hobbies/cycling.gif"
+            src="/about/hobbies/hooping.gif"
             alt="billards"
             width={180}
             height={130}
