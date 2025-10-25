@@ -17,42 +17,22 @@ export default function Navbar() {
       <Link
         href="/"
         style={{ borderBottom: pahtname === "" ? "2px solid blue" : "none" }}
-        className={styles.h1}
       >
         <h1>mruczekpln</h1>
       </Link>
-      <ul className={styles.ul}>
+      <ul>
         <li>
-          <Link
-            href="/about"
-            className={styles.a}
-            style={{
-              borderBottom: pahtname === "about" ? "2px solid black" : "none",
-            }}
-          >
+          <Link href="/about" data-active={pahtname === "about"}>
             about
           </Link>
         </li>
         <li>
-          <Link
-            href="/projects"
-            className={styles.a}
-            style={{
-              borderBottom:
-                pahtname === "projects" ? "2px solid black" : "none",
-            }}
-          >
+          <Link href="/projects" data-active={pahtname === "projects"}>
             projects
           </Link>
         </li>
         <li>
-          <Link
-            href="/contact"
-            className={styles.contact}
-            style={{
-              borderBottom: pahtname === "contact" ? "2px solid black" : "none",
-            }}
-          >
+          <Link href="/contact" data-active={pahtname === "contact"}>
             get in touch
           </Link>
         </li>

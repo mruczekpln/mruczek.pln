@@ -1,51 +1,74 @@
 .nav {
+  height: 48px;
+
   display: flex;
-  align-items: baseline;
+  align-items: start;
   justify-content: space-between;
 
-  .h1 {
-    height: 40px;
-
-    padding-bottom: 1rem;
-
-    font-family: var(--font-title);
+  > a {
+    height: 100%;
     text-decoration: none;
-    color: black;
 
-    &:hover {
-      background-image: linear-gradient(to top, indigo, blue);
-      background-clip: text;
-      color: transparent;
+    > h1 {
+      height: 100%;
+
+      padding-bottom: 1rem;
+
+      font-family: var(--font-title);
+      color: black;
+
+      &:hover {
+        background-image: linear-gradient(to top, indigo, blue);
+        background-clip: text;
+        color: transparent;
+      }
     }
   }
 
-  .ul {
+  > ul {
+    height: 100%;
+
     display: flex;
+    // align-items: center;
     gap: 2rem;
 
     list-style: none;
 
-    .a {
-      height: 40px;
+    > li {
+      height: 100%;
 
-      padding-bottom: 1rem;
+      display: flex;
+      align-items: center;
 
-      font-weight: lighter;
-      text-decoration: none;
-      color: black;
-    }
+      &:nth-of-type(3) > a {
+        font-weight: bolder;
+        text-decoration: none;
+        color: black;
+      }
+      a {
+        // height: 100%;
+        // height: 40px;
 
-    .contact {
-      padding-bottom: 1rem;
+        // padding-bottom: 27px;
 
-      font-weight: bold;
-      text-decoration: none;
-      color: black;
-    }
+        font-weight: lighter;
+        text-decoration: none;
+        color: black;
 
-    .a:hover,
-    .contact:hover {
-      border-bottom: 1px solid black !important;
+        &#contact {
+          font-weight: bold;
+          text-decoration: none;
+          color: black;
+        }
+      }
+
+      &:has(a[data-active="true"]) {
+        border-bottom: 2px solid black;
+      }
+
+      &:has(a:hover) {
+        border-bottom: 1px solid black !important;
+      }
     }
   }
 
